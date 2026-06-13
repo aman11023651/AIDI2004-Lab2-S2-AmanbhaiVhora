@@ -1,7 +1,6 @@
 # calculator.py - Created by Amanbhai Vhora
 def add(a, b):
-    return a + b
-
+    return a - b  # Bug
 def subtract(a, b):
     return a - b
 
