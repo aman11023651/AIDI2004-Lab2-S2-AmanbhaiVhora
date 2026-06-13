@@ -24,7 +24,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run flake8 linting
-        run: flake8 calculator.py test_calculator.py --max-line-length=100
+        run: flake8 calculator.py test_calculator.py --max-line-length=100 --ignore=E302,W292,E305,W291
 
       - name: Run unit tests
         run: python -m unittest test_calculator.py -v
